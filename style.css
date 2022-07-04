@@ -1,0 +1,111 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    font-size: 15px;
+    font-family:Poppins;
+    font-weight:400;
+    height:100vh;
+    width:100vw;
+    border:0;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    color:hsl(234, 12%, 34%);
+    background-color: hsl(0, 0%, 98%);
+}
+h1{
+    font-weight:200;
+    font-size:2.25em;
+    text-align:left;
+    margin-bottom:0;
+}
+.bold{
+    font-weight:600;
+    font-size:2.25em;
+    text-align:left;
+    line-height: .5;
+    margin-top:2%;
+    color:hsl(234, 12%, 34%);
+}
+p{
+    font-weight: 200;
+    line-height:2;
+    color:hsl(229, 6%, 66%);
+}
+h2{
+    font-weight:600;
+}
+
+main{
+    width:90%;
+    margin: 10% 5%;
+}
+
+.card{
+    text-align:right;
+    box-shadow: 2px 6px 10px 1px hsl(229, 6%, 66%);
+    padding:3% 6%;
+    margin:5% 0;
+    border-radius:.25em;
+}
+.card h2{
+    text-align:left;
+}
+.card p{
+    text-align:left;
+}
+
+.one{
+    border-top:5px solid hsl(180, 62%, 55%);
+    grid-area:supervisor;
+}
+
+.two{
+    border-top:5px solid hsl(0, 78%, 62%);
+    grid-area:builder;
+}
+
+.three{
+    border-top:5px solid hsl(34, 97%, 64%);
+    grid-area:karma;
+}
+.four{
+    border-top:5px solid hsl(212, 86%, 64%);
+    grid-area:calculator;
+}
+
+@media screen and (min-width:600px) {
+    .cards{
+        display:grid;
+        grid-template: repeat(4,1fr)/repeat(3,1fr);
+        grid-template-areas:
+        ". builder ."
+        "supervisor builder calculator"
+        "supervisor karma calculator"
+        ". karma .";
+        grid-column-gap:3%;
+    }
+    h1{
+        text-align:center;
+    }
+    .bold{
+        text-align:center;
+        line-height: 1;
+    }
+    header{
+        width:40%;
+        margin:auto;
+    }
+    body{
+        align-content: flex-start;
+        justify-content: flex-start;
+        height:100vh;
+    }
+    main{
+        margin:auto;
+    }
+
+}
