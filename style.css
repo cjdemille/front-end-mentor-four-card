@@ -1,8 +1,5 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
 body{
-    font-size: 15px;
+    font-size: 1rem;
     font-family:Poppins;
     font-weight:400;
     height:100vh;
@@ -16,96 +13,150 @@ body{
     color:hsl(234, 12%, 34%);
     background-color: hsl(0, 0%, 98%);
 }
-h1{
-    font-weight:200;
-    font-size:2.25em;
-    text-align:left;
-    margin-bottom:0;
+
+h1, .bold{
+    font-weight: 200; 
+    font-size: 2.25rem;
+    text-align: left; 
 }
+
 .bold{
-    font-weight:600;
-    font-size:2.25em;
-    text-align:left;
-    line-height: .5;
-    margin-top:2%;
-    color:hsl(234, 12%, 34%);
+    line-height: .5; 
+    margin-top: 2%; 
 }
+
 p{
-    font-weight: 200;
-    line-height:2;
-    color:hsl(229, 6%, 66%);
+    line-height:2; 
+    color: hsl(229, 6%, 66%); 
 }
-h2{
-    font-weight:600;
+
+h2, .bold{
+    font-weight: 600; 
+}
+
+.attribution{
+    font-size: 0.6875rem;
+    text-align:center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%); 
 }
 
 main{
-    width:90%;
-    margin: 10% 5%;
+    width: 90%; 
+    margin: 5rem auto; 
 }
-
+/* Card styling  */
 .card{
-    text-align:right;
-    box-shadow: 2px 6px 10px 1px hsl(229, 6%, 66%);
-    padding:3% 6%;
-    margin:5% 0;
-    border-radius:.25em;
-}
-.card h2{
-    text-align:left;
-}
-.card p{
-    text-align:left;
+    text-align: right; 
+    box-shadow: 0.125rem 0.375rem 0.625rem 0.0625rem hsl(229, 6%, 66%); 
+    padding: 3% 6%; 
+    margin: 5% 0; 
+    border-radius: 0.25rem;
 }
 
-.one{
-    border-top:5px solid hsl(180, 62%, 55%);
-    grid-area:supervisor;
+.card h2, .card p{
+    text-align: left;
 }
 
-.two{
-    border-top:5px solid hsl(0, 78%, 62%);
-    grid-area:builder;
+.one, .two, .three, .four{
+    border-top-width: 0.3125rem;
+    border-top-style: solid;
 }
 
-.three{
-    border-top:5px solid hsl(34, 97%, 64%);
-    grid-area:karma;
-}
-.four{
-    border-top:5px solid hsl(212, 86%, 64%);
-    grid-area:calculator;
+.one {
+    border-top-color: hsl(180, 62%, 55%);
+    grid-area: supervisor;
 }
 
-@media screen and (min-width:600px) {
-    .cards{
-        display:grid;
-        grid-template: repeat(4,1fr)/repeat(3,1fr);
-        grid-template-areas:
-        ". builder ."
-        "supervisor builder calculator"
-        "supervisor karma calculator"
-        ". karma .";
-        grid-column-gap:3%;
+.two {
+    border-top-color: hsl(0, 78%, 62%);
+    grid-area: builder;
+}
+
+.three {
+    border-top-color: hsl(34, 97%, 64%);
+    grid-area: karma;
+}
+
+.four {
+    border-top-color: hsl(212, 86%, 64%);
+    grid-area: calculator;
+}
+
+/* Tablet styling  */
+
+@media screen and (min-width: 37.5rem) {
+   
+    body{
+        align-content: flex-start; 
+        justify-content: flex-start; 
+        height: 100vh; 
     }
-    h1{
-        text-align:center;
+
+    header{
+        width: 40%; 
+        margin: auto;
     }
+
+    main{
+        margin:auto; 
+    }
+    h1, .bold{
+        text-align: center; 
+    }
+
     .bold{
-        text-align:center;
         line-height: 1;
     }
-    header{
-        width:40%;
-        margin:auto;
+
+    .cards{
+        display: grid; 
+        grid-template: 1fr 1fr/ 1fr 1fr; 
+        grid-template-areas: 
+        "supervisor builder"
+        "karma calculator";
+        grid-column-gap: 3%; 
     }
+}
+
+
+
+/* Desktop styling */
+
+@media screen and (min-width: 68rem) {
     body{
-        align-content: flex-start;
-        justify-content: flex-start;
-        height:100vh;
-    }
-    main{
-        margin:auto;
+        align-content: flex-start; 
+        justify-content: flex-start; 
+        height: 100vh; 
     }
 
+    header{
+        width: 40%; 
+        margin: auto;
+    }
+
+    h1, .bold{
+        text-align: center; 
+    }
+
+    .bold{
+        line-height: center;
+    }
+
+    main{
+        margin:auto; 
+    }
+    
+    .cards{
+        display: grid; 
+        grid-template: repeat(4,1fr)/repeat(3,1fr); 
+        grid-template-areas: 
+        ". builder ." 
+        "supervisor builder calculator" 
+        "supervisor karma calculator"
+        ". karma ."; 
+        grid-column-gap: 3%; 
+    }
 }
