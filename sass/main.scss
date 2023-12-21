@@ -1,0 +1,12 @@
+@import "abstracts/variables";
+
+@import "base/reset";
+@import "base/base";
+@import "base/colors";
+@import "base/typography";
+
+@import "components/card";
+
+@import "layout/header.scss";
+@import "layout/cards.scss";
+@import "layout/footer.scss";

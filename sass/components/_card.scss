@@ -1,0 +1,50 @@
+.card {
+    height: 22.2rem;
+    min-width: 31rem;
+    padding: 3rem;
+    background-color: $color-white;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 0 1rem 3rem rgba($color-gray, .2);
+    border-top-width: 0.3125rem;
+    border-top-style: solid;
+
+    // &:not(:last-child) {
+    //     margin-bottom: 3rem;
+    // }
+
+    &__heading {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        font-size: 1.3rem;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 3rem;
+        right: 3rem;
+    }
+
+    &--supervisor {
+        border-top-color: $color-teal;
+        grid-area: supervisor;
+    }
+
+    &--builder {
+        border-top-color: $color-red;
+        grid-area: builder;
+    }
+
+    &--karma {
+        border-top-color: $color-yellow;
+        grid-area: karma;
+    }
+
+    &--calculator {
+        border-top-color: $color-blue;
+        grid-area: calculator;
+    }
+}

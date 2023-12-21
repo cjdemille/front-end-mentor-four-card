@@ -8,7 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <!-- stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,43 +20,40 @@
 
 <body>
   <main>
-    <header>
-      <h1>Reliable, efficient delivery</h1>
-      <p class="bold">Powered by Technology</p>
-
-      <p>Our Artificial Intelligence powered tools use millions of project data points
+    <header class="heading">
+      <h1 class="heading-text"><span class="heading-text__line">Reliable, efficient delivery</span><span
+          class="heading-text__line heading-text__line--bold">Powered by Technology</span></h1>
+      <p class="heading-para">Our Artificial Intelligence powered tools use millions of project data points
         to ensure that your project is successful</p>
     </header>
     <section class="cards">
-      <div class="card one">
-        <h2>Supervisor</h2>
-        <p>Monitors activity to identify project roadblocks</p>
-        <img src="images/icon-supervisor.svg" alt="magnifier">
+      <div class="card card--supervisor">
+        <h2 class="card__heading">Supervisor</h2>
+        <p class="card__text">Monitors activity to identify project roadblocks</p>
+        <img src="images/icon-supervisor.svg" alt="magnifier" class="card__img">
       </div>
-      <div class="card two">
-        <h2>Team Builder</h2>
-        <p>Scans our talent network to create the optimal team for your project</p>
-        <img src="images/icon-team-builder.svg" alt="house icon">
+      <div class="card card--builder">
+        <h2 class="card__heading">Team Builder</h2>
+        <p class="card__text">Scans our talent network to create the optimal team for your project</p>
+        <img src="images/icon-team-builder.svg" alt="house icon" class="card__img">
       </div>
-      <div class="card three">
-        <h2>Karma</h2>
-        <p>Regularly evaluates our talent to ensure quality</p>
-        <img src="images/icon-karma.svg" alt="lightbulb icon">
+      <div class="card card--karma">
+        <h2 class="card__heading">Karma</h2>
+        <p class="card__text">Regularly evaluates our talent to ensure quality</p>
+        <img src="images/icon-karma.svg" alt="lightbulb icon" class="card__img">
       </div>
-      <div class="card four">
-        <h2>Calculator</h2>
-        <p>Uses data from past projects to provide better delivery estimates</p>
-        <img src="images/icon-calculator.svg" alt="calculator icon">
+      <div class="card card--calculator">
+        <h2 class="card__heading">Calculator</h2>
+        <p class="card__text">Uses data from past projects to provide better delivery estimates</p>
+        <img src="images/icon-calculator.svg" alt="calculator icon" class="card__img">
       </div>
     </section>
   </main>
 
-
-
-  <footer>
+  <footer class="footer">
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">C.J. DeMille</a>.
+      Coded by <a href="https://www.cjdemille.io" target="_blank">C.J. DeMille</a>.
     </p>
   </footer>
 </body>

@@ -1,0 +1,23 @@
+{
+  "name": "front-end-mentor-four-card",
+  "version": "1.0.0",
+  "description": "![Design preview for the Four card feature section coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjdemille/front-end-mentor-four-card.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjdemille/front-end-mentor-four-card/issues"
+  },
+  "homepage": "https://github.com/cjdemille/front-end-mentor-four-card#readme",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}

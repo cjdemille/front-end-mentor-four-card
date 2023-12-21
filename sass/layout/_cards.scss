@@ -1,0 +1,35 @@
+.cards {
+    width: 80%;
+    display: grid;
+    gap: 2rem;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        " supervisor "
+        " builder "
+        " karma  "
+        " calculator"
+    ;
+
+
+    @media screen and (min-width:850px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            " supervisor builder"
+            " karma  calculator"
+        ;
+    }
+
+    @media screen and (min-width:1292px) {
+        max-width: 111rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: " . builder . "
+            " supervisor builder calculator "
+            " supervisor karma calculator "
+            " . karma . "
+        ;
+    }
+}

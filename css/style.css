@@ -1,0 +1,137 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  color: #4D4F62;
+  background-color: #FAFAFA;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  height: 22.2rem;
+  min-width: 31rem;
+  padding: 3rem;
+  background-color: #fff;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 0 1rem 3rem rgba(77, 79, 98, 0.2);
+  border-top-width: 0.3125rem;
+  border-top-style: solid;
+}
+.card__heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.card__text {
+  font-size: 1.3rem;
+}
+.card__img {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+}
+.card--supervisor {
+  border-top-color: #44D3D2;
+  grid-area: supervisor;
+}
+.card--builder {
+  border-top-color: #EA5454;
+  grid-area: builder;
+}
+.card--karma {
+  border-top-color: #FCAE4A;
+  grid-area: karma;
+}
+.card--calculator {
+  border-top-color: #549EF2;
+  grid-area: calculator;
+}
+
+.heading {
+  width: 80%;
+  margin: 6rem auto;
+  text-align: center;
+}
+.heading-text__line {
+  display: block;
+  font-weight: 300;
+  letter-spacing: 0.025rem;
+  font-size: 2.4rem;
+}
+.heading-text__line--bold {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.heading-para {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1px;
+}
+@media screen and (min-width: 850px) {
+  .heading {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1292px) {
+  .heading {
+    width: 40%;
+  }
+}
+
+.cards {
+  width: 80%;
+  display: grid;
+  gap: 2rem;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: " supervisor " " builder " " karma  " " calculator";
+}
+@media screen and (min-width: 850px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: " supervisor builder" " karma  calculator";
+  }
+}
+@media screen and (min-width: 1292px) {
+  .cards {
+    max-width: 111rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: " . builder . " " supervisor builder calculator " " supervisor karma calculator " " . karma . ";
+  }
+}
+
+.footer {
+  margin: 2rem auto;
+  text-align: center;
+}
+.footer .attribution {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*# sourceMappingURL=style.css.map */
